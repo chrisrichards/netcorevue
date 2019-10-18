@@ -1,0 +1,22 @@
+@page
+@model FeatureOne.Index
+
+@{
+    ViewData["Title"] = "Feature One";
+}
+
+<h2>Feature One</h2>
+
+<p>
+    <a asp-page= "/Index">Home</a>
+</p>
+
+<div id=app></div>
+
+@section Scripts
+{
+    <environment exclude="Development">
+        <script src="~/js/chunk-vendors.js" asp-append-version="true"></script>
+    </environment>
+    <script src="~/js/feature-one.js"></script>
+}
